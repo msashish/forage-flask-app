@@ -10,5 +10,5 @@ class Config(object):
     # SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI') or "postgresql:///demo_user"
 
     # For postgressql created using user msashish and in CloudSQL
-    SQLALCHEMY_DATABASE_URI = "msashish:///sql-dev-917bf9b7"
+    SQLALCHEMY_DATABASE_URI = "msashish:///sql-dev-cd1b2ba1"
     SQLALCHEMY_TRACK_MODIFICATIONS = False

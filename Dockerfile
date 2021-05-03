@@ -1,5 +1,7 @@
 FROM python:alpine3.7
 
+apk add postgresql-dev
+
 WORKDIR /app
 
 ADD requirements.txt /app/requirements.txt

@@ -34,3 +34,6 @@
     Reference: https://github.com/google-github-actions/setup-gcloud/blob/master/example-workflows/gke/README.md
     For custom CD use app.yaml and a custom scripto
  
+    kubectl expose deployment gke-test --type=LoadBalancer --port 80 --target-port 8080
+    kubectl get services  (use external ip to access)
+    

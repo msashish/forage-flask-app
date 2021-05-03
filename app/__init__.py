@@ -12,6 +12,8 @@ migrate = Migrate(app, db)
 
 from app import routes, models
 
+db.create_all()
+db.session.commit()
 
 if __name__ == '__main__':
     app.run()

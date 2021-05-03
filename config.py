@@ -11,6 +11,7 @@ class Config(object):
 
     # For postgressql created using user msashish and in CloudSQL
     #SQLALCHEMY_DATABASE_URI = "msashish:///sql-dev-cd1b2ba1"
+    #postgres+psycopg2://<db_user>:<db_pass>@<public_ip>/<db_name>?host=/cloudsql/<cloud_sql_instance_name>
     SQLALCHEMY_DATABASE_URI = \
-        'postgresql+psycopg2://msashish:ShreeGanesh1@/postgres?host=/cloudsql/sql-dev-cd1b2ba1'
+        'postgresql+psycopg2://postgres:ShreeGanesh1@35.223.55.86/postgres?host=/cloudsql/sql-dev-cd1b2ba1'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

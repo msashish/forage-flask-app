@@ -1,7 +1,5 @@
 FROM python:alpine3.7
 
-RUN apt update
-
 WORKDIR /app
 
 ADD requirements.txt /app/requirements.txt

@@ -1,6 +1,6 @@
 FROM python:alpine3.7
 
-apk add postgresql-dev
+RUN apk add postgresql-dev
 
 WORKDIR /app
 

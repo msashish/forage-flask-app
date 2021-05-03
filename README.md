@@ -28,19 +28,9 @@
     gunicorn app:app
     Check at  http://127.0.0.1:8000/
     
-##  Deploy flask app to GKE
-    Build the image
-        gcloud builds --project YOUR_PROJECT_NAME \
-        submit --tag gcr.io/YOUR_PROJECT_NAME/flask-app:v1 .
-       
-    Login to GKE cluster and 
-    git clone <url>
-    Apply deployment to GKE cluster
-        kubectl apply -f app.yaml
-        
-    Expose port using:
-        kubectl expose deployment flask-app-tutorial \
-        --type=LoadBalancer --port 80 --target-port 8080
-        
-    Get url to access app:
-        kubectl get services -l name=flask-app-tutorial
+##  Deploy flask app to GKE using GitHub Actions
+
+    See ---> .github/workflows/gke.yml    
+    Reference: https://github.com/google-github-actions/setup-gcloud/blob/master/example-workflows/gke/README.md
+    For custom CD use app.yaml and a custom scripto
+ 

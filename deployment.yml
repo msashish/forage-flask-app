@@ -24,7 +24,7 @@ spec:
         - containerPort: 5000
         resources:
           requests:
-            cpu: 100m
+            cpu: 50m
           limits:
             cpu: 100m
         env:
@@ -76,7 +76,7 @@ spec:
             # The proxy's CPU use scales linearly with the amount of IO between
             # the database and the application. Adjust this value based on your
             # application's requirements.
-            cpu:    "1"
+            cpu: 50m
           # [START cloud_sql_proxy_k8s_volume_secret]
       volumes:
         - name: sa-volume

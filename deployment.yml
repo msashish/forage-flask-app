@@ -31,17 +31,17 @@ spec:
           - name: DB_USER
             valueFrom:
               secretKeyRef:
-                name: postgres
+                name: postgres-secret
                 key: username
           - name: DB_PASS
             valueFrom:
               secretKeyRef:
-                name: ShreeGanesh1
+                name: postgres-secret
                 key: password
           - name: DB_NAME
             valueFrom:
               secretKeyRef:
-                name: postgres
+                name: postgres-secret
                 key: database
       - name: cloud-sql-proxy
         image: gcr.io/cloudsql-docker/gce-proxy:1.17

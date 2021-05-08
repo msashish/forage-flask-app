@@ -15,5 +15,5 @@ class Config(object):
     #SQLALCHEMY_DATABASE_URI = \
     #    'postgresql+psycopg2://postgres:ShreeGanesh1@35.223.55.86/postgres?host=/cloudsql/sql-dev-cd1b2ba1'
     SQLALCHEMY_DATABASE_URI = \
-        'postgresql+psycopg2://@127.0.0.1:5432/postgres'
+        'postgresql+psycopg2://postgres:ShreeGanesh1@127.0.0.1:5432/postgres'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

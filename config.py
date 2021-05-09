@@ -12,6 +12,7 @@ class Config(object):
     print(DB_NAME, DB_USER, DB_PASS)
 
     # Simply connect to Cloud SQL Proxy sidecar @ 127.0.0.1:5432
-    SQLALCHEMY_DATABASE_URI = \
-        'postgresql+psycopg2://DB_USER:DB_PASS@127.0.0.1:5432/DB_NAME'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:ShreeGanesh1@127.0.0.1:5432/postgres'
+     #   'postgresql+psycopg2://DB_USER:DB_PASS@127.0.0.1:5432/DB_NAME'
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False

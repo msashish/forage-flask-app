@@ -5,15 +5,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-never-know-anything'
+    DB_NAME = os.environ.get('DB_NAME')
+    DB_USER = os.environ.get('DB_USER')
+    DB_PASS = os.environ.get('DB_PASS')
 
-    # For local test TODO: based on local or GCP we can configure either of them
-    # SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI') or "postgresql:///demo_user"
-
-    # For postgressql created using user msashish and in CloudSQL
-    #SQLALCHEMY_DATABASE_URI = "msashish:///sql-dev-cd1b2ba1"
-    #postgres+psycopg2://<db_user>:<db_pass>@<public_ip>/<db_name>?host=/cloudsql/<cloud_sql_instance_name>
-    #SQLALCHEMY_DATABASE_URI = \
-    #    'postgresql+psycopg2://postgres:ShreeGanesh1@35.223.55.86/postgres?host=/cloudsql/sql-dev-cd1b2ba1'
+    # Simply connect to Cloud SQL Proxy sidecar @ 127.0.0.1:5432
     SQLALCHEMY_DATABASE_URI = \
-        'postgresql+psycopg2://postgres:ShreeGanesh1@127.0.0.1:5432/postgres'
+        'postgresql+psycopg2://DB_USER:DB_PASS@127.0.0.1:5432/DB_NAME'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

@@ -54,7 +54,7 @@ spec:
 
           # Replace DB_PORT with the port the proxy should listen on
           # Defaults: MySQL: 3306, Postgres: 5432, SQLServer: 1433
-          - "-instances=qwiklabs-gcp-01-7c01b5c2c07e:us-central1:sql-dev-d337fa00=tcp:5432"
+          - "-instances=qwiklabs-gcp-01-c81a26698645:us-central1:sql-dev-47bf6f57=tcp:5432"
 
           # [START cloud_sql_proxy_k8s_volume_mount]
           # This flag specifies where the service account key can be found

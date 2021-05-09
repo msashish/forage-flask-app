@@ -43,7 +43,14 @@
     3) Access application :-) 
     
             GET at http://<external ip shown by service>/
+            
+            ![Alt text](get_request.png?raw=true "Title")
+            
             POST at http://<external ip shown by service>/
+            
+            ![Alt text](post_request.png?raw=true "Title")
+            
+           
     
 
 ##  Local setup 

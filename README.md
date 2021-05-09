@@ -44,11 +44,11 @@
     
             GET at http://<external ip shown by service>/
             
-            ![Alt text](<get_request.png>)
+            ![Alt text](<https://github.com/msashish/forage-flask-app/blob/main/get_request.png>)
             
             POST at http://<external ip shown by service>/
             
-            ![Alt text](<post_request.png>)
+            ![Alt text](<https://github.com/msashish/forage-flask-app/blob/main/post_request.png>)
             
            
     

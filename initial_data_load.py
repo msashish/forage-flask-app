@@ -2,7 +2,7 @@ from app.models import User
 from app import db
 
 user1 = User(id=10001, first_name="Atom", last_name="Molecule", username="atomic",
-             company="ABC", contact_no="9901234101", email="atomic@anz.com")
+             company="ABC", contact_no="9901234101", email="atomic@abc.com")
 
 user2 = User(id=10002, first_name="Bhaskar", last_name="Paskar", username="tusker",
              company="None", contact_no="4017341019", email="tusker@none.com")
